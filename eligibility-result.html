@@ -37,8 +37,8 @@
         @media (min-width: 768px) { .container { max-width: 768px; } }
         @media (min-width: 1024px) { .container { max-width: 900px; padding-left: 2rem; padding-right: 2rem; } }
         .navbar { background-color: #ffffff; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
-        .navbar-container { display: flex; justify-content: space-between; align-items: center; height: 5rem; }
-        .navbar-logo { height: 45px; object-fit: contain; }
+        .navbar-container { display: flex; justify-content: space-between; align-items: center; height: 5rem; gap: 1rem; }
+        .navbar-logo { height: 45px; max-width: 210px; width: auto; object-fit: contain; flex-shrink: 0; }
         .result-wrapper { padding: 3rem 0 5rem 0; }
         .result-card { background: #fff; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); text-align: center; border-top: 6px solid #1D4ED8; }
         .result-card h1 { font-size: 1.75rem; font-weight: 800; margin: 0 0 1rem 0; }
@@ -72,7 +72,7 @@
     <nav class="navbar">
         <div class="container navbar-container">
             <a href="/" title="Colombian Passport Home">
-                <img src="https://static.wixstatic.com/media/d8d541_c0e6b982a4e341f399c07cac0156aebb~mv2.png" alt="ColombianPassport.com Logo" class="navbar-logo" onerror="this.onerror=null;this.src='https://placehold.co/200x50/0056b3/FFFFFF?text=ColombianPassport.com';">
+                <img src="logo.png" alt="ColombianPassport.com Logo" class="navbar-logo" onerror="this.onerror=null;this.src='https://placehold.co/200x50/0056b3/FFFFFF?text=ColombianPassport.com';">
             </a>
         </div>
     </nav>

@@ -50,8 +50,8 @@
 
         /* --- NAVEGACIÓN --- */
         .navbar { background-color: #ffffff; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 50; }
-        .navbar-container { display: flex; justify-content: space-between; align-items: center; height: 5rem; }
-        .navbar-logo { height: 45px; object-fit: contain; }
+        .navbar-container { display: flex; justify-content: space-between; align-items: center; height: 5rem; gap: 1rem; }
+        .navbar-logo { height: 45px; max-width: 210px; width: auto; object-fit: contain; flex-shrink: 0; }
         .nav-links { display: none; }
         @media (min-width: 768px) { .nav-links { display: flex; align-items: center; gap: 1rem; } }
         .nav-link { color: #374151; padding: 0.5rem 0.75rem; border-radius: 0.375rem; font-size: 0.875rem; font-weight: 500; text-decoration: none; transition: color 0.2s; }
@@ -249,7 +249,7 @@
         <div class="container navbar-container">
             <div>
                 <a href="https://www.colombianpassport.com" title="Colombian Passport Home">
-                    <img src="https://static.wixstatic.com/media/d8d541_c0e6b982a4e341f399c07cac0156aebb~mv2.png" alt="ColombianPassport.com Logo" class="navbar-logo" onerror="this.onerror=null;this.src='https://placehold.co/200x50/0056b3/FFFFFF?text=ColombianPassport.com';">
+                    <img src="logo.png" alt="ColombianPassport.com Logo" class="navbar-logo" onerror="this.onerror=null;this.src='https://placehold.co/200x50/0056b3/FFFFFF?text=ColombianPassport.com';">
                 </a>
             </div>
             <div class="nav-links">
@@ -695,7 +695,7 @@
             <div class="footer-grid">
                 <div>
                     <a href="https://www.colombianpassport.com" title="Colombian Passport Home">
-                        <img src="https://static.wixstatic.com/media/d8d541_c0e6b982a4e341f399c07cac0156aebb~mv2.png" alt="Colombian Passport Logo" class="footer-logo" onerror="this.onerror=null;this.src='https://placehold.co/200x50/374151/9CA3AF?text=ColombianPassport.com';">
+                        <img src="logo.png" alt="Colombian Passport Logo" class="footer-logo" onerror="this.onerror=null;this.src='https://placehold.co/200x50/374151/9CA3AF?text=ColombianPassport.com';">
                     </a>
                     <p class="brand">Colombian Passport</p>
                     <p class="tagline" style="color: #9CA3AF; font-size: 0.9rem;">Asesoría legal experta para tu proceso migratorio.</p>

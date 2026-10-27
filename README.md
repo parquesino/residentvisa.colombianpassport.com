@@ -12,13 +12,13 @@ Sitio estático en español (traspaso R + R por tiempo acumulado), estética azu
 
 ## Estructura
 
-- `index.html` — landing única (Residente, $650).
+- `index.html` — landing única (Residente $650 primera vez / $450 solo traspaso).
 - `eligibility-result.html` — página de resultado del quiz.
 - Sin CSS compartido: cada HTML lleva su propio `<style>` inline.
 
 ## Modelo de precio vigente (oct-2026)
 
-- Precio oficial único en la web: **$650 USD** (ex-Protegido). Sin nombres de plan (Esencial/Protegido/Integral).
+- Precios oficiales en la web: **$650 USD** R primera vez / **$450 USD** solo traspaso (ex-Protegido / traspaso). Sin nombres de plan (Esencial/Protegido/Integral).
 - Esencial (descuento) e Integral ($2.900) solo existen en consulta; ni mención en web.
 - Garantía: reaplicaciones por inadmisión sin honorarios hasta la aprobación. Cada nuevo estudio oficial ($56) lo paga el cliente al Estado. No cubre el rechazo definitivo.
 - Tabla a 2 columnas (Servicio | Precio fijo). Beneficiario a **$300** (unificado; el ex-Protegido local era $200).

@@ -3,6 +3,7 @@
 <head>
     <!-- Chaty removed: replaced by native WhatsApp float -->
 
+    <script src="consent.js"></script>
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -214,22 +215,6 @@
         .result-more-info { background-color: #FEFCE8; border-left: 4px solid #EAB308; }
         .result-not-qualified { background-color: #FEF2F2; border-left: 4px solid #DC2626; }
 
-        /* --- COOKIE BANNER MANUAL --- */
-        #cookie-consent-banner {
-            position: fixed;
-            bottom: 0; left: 0; right: 0;
-            background-color: #1F2937;
-            color: white;
-            padding: 1rem;
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            z-index: 100;
-            text-align: center;
-        }
-        @media(min-width: 640px) { #cookie-consent-banner { flex-direction: row; } }
     </style>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -716,10 +701,6 @@
         </div>
     </footer>
 
-    <div id="cookie-consent-banner">
-        <p>Usamos cookies para mejorar tu experiencia y con fines de marketing. Al continuar, aceptas nuestra <a href="https://www.colombianpassport.com/privacy-policy" target="_blank" style="text-decoration: underline; color: #60A5FA;">Política de privacidad</a>.</p>
-        <button id="accept-cookies" class="btn btn-green" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Aceptar</button>
-    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -893,26 +874,6 @@
                 return isValid;
             }
 
-            const consentBanner = document.getElementById('cookie-consent-banner');
-            const acceptCookiesBtn = document.getElementById('accept-cookies');
-
-            function checkCookieConsent() {
-                if (!document.cookie.split(';').some((item) => item.trim().startsWith('cookie_consent='))) {
-                    consentBanner.style.display = 'flex';
-                }
-            }
-
-            if (acceptCookiesBtn) {
-                acceptCookiesBtn.addEventListener('click', function() {
-                    const d = new Date();
-                    d.setTime(d.getTime() + (365*24*60*60*1000));
-                    let expires = "expires="+ d.toUTCString();
-                    document.cookie = "cookie_consent=true;" + expires + ";path=/";
-                    consentBanner.style.display = 'none';
-                });
-            }
-
-            checkCookieConsent();
         });
     </script>
 <a id="waFloat" class="wa-float" href="https://wa.me/573223395612?text=Hola%20Camila%2C%20quiero%20la%20visa%20de%20Residente" target="_blank" rel="noopener" aria-label="WhatsApp"><span class="wa-tip">¿Dudas? Escríbenos</span><span class="wa-btn"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span></a>

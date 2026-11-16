@@ -1,5 +1,7 @@
 # residentvisacolombia.com — landing de Residente (ES)
 
+> **RETIRADA el 2026-11-16.** El traspaso de residente pre-2022 venció el 31-oct-2026 y la campaña apunta ahora a `abogadosdemigracion.com/visa-residente/`. Este sitio ya no es una landing: `index.html` y `eligibility-result.html` son páginas de redirección (sin GTM, sin cookies) para que los enlaces y anuncios antiguos no terminen en un 404. El contenido original sigue en el historial de git.
+
 Sitio estático en español (traspaso R + R por tiempo acumulado), estética azul propia. Sin build. Deploy = push a `main` → GitHub Pages.
 
 > OJO repo: el remoto se llama **`parquesino/residentvisa.colombianpassport.com.git`** (distinto a la carpeta). Dominio vía `CNAME` (`residentvisa.colombianpassport.com`). La cuenta de deploy necesita acceso concedido a ese repo (pedirlo si el push da 403).
